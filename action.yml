@@ -1,4 +1,4 @@
-name: 'Publish app to Google App Engine'
+name: 'Publish app to Google App Engine using Inquid base template'
 description: 'Publish app to Google App Engine'
 author: 'Xiang Zheng'
 inputs:
