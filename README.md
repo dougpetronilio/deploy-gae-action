@@ -13,7 +13,7 @@ This project uses this action to published to Google App Engine.
 ## Usage
 ```yaml
 - name: Initialize Google Cloud SDK
-  uses: zxyle/publish-gae-action@master
+  uses: inquid/publish-gae-action@master
   with:
     service_account_email: ${{ secrets.GCP_SA_EMAIL }}
     service_account_key: ${{ secrets.GCP_SA_KEY }}
