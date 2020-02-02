@@ -8,7 +8,7 @@ const deepmerge = require('deepmerge');
  *
  */
 try {
-    const fileContents = fs.readFileSync('./docker/app.yaml', 'utf8');
+    const fileContents = fs.readFileSync('./app.yaml', 'utf8');
 
     let data = yaml.safeLoad(fileContents);
 
