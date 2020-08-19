@@ -1,4 +1,4 @@
-name: "Publish app to Google App Engine"
+name: "Deploy to Google App Engine"
 description: "This action allows you publish an application to Google App Engine"
 
 inputs:
