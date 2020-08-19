@@ -1,13 +1,13 @@
-# publish-gae-action
+# deploy-gae-action
 
-This action allows you publish an application to [Google App Engine](https://cloud.google.com/appengine/).
+This action allows you to deploy an application to [Google App Engine](https://cloud.google.com/appengine/).
 
 This action was forked from https://github.com/inquid/publish-gae-action.
 
 ## Usage
 ```yaml
 - name: Initialize Google Cloud SDK
-  uses: rosslh/publish-gae-action@master
+  uses: rosslh/deploy-gae-action@master
   with:
     service_account_email: ${{ secrets.GCP_SA_EMAIL }}
     service_account_key: ${{ secrets.GCP_SA_KEY }}
@@ -15,7 +15,7 @@ This action was forked from https://github.com/inquid/publish-gae-action.
     gae_variables: ${{ secrets.GAE_VARIABLES }}
     gae_config_path: ./server/app.yaml
 
-- name: Publish app to Google App Engine
+- name: Deploy app to Google App Engine
   run: |
     # This client-secret.json is converted by GCP_SA_KEY.
     gcloud auth activate-service-account ${{ secrets.GCP_SA_EMAIL }} --key-file=client-secret.json

@@ -1,7 +1,7 @@
 {
-  "name": "publish-gae-action",
-  "version": "1.1.0",
-  "description": "his action allows you publish application to Google App Engine",
+  "name": "deploy-gae-action",
+  "version": "1.1.1",
+  "description": "This action allows you deploy your application to Google App Engine",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
