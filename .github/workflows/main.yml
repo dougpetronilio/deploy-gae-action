@@ -8,12 +8,12 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Initialize Google Cloud SDK
-        # This action was forked from https://github.com/inquid/publish-gae-action
         uses: rosslh/publish-gae-action@master
         with:
           service_account_email: ${{ secrets.GCP_SA_EMAIL }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           project_id: ${{ secrets.PROJECT_ID }}
+          gae_config_path: ./server/app.yaml
 
       - name: Print Google Cloud SDK version
         run: |

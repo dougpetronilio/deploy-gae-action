@@ -1,8 +1,8 @@
 # publish-gae-action
 
-This action was forked from https://github.com/inquid/publish-gae-action
+This action allows you publish an application to [Google App Engine](https://cloud.google.com/appengine/).
 
-This action allows you publish application to [Google App Engine](https://cloud.google.com/appengine/).
+This action was forked from https://github.com/inquid/publish-gae-action.
 
 ## Usage
 ```yaml

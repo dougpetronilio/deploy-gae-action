@@ -1,6 +1,6 @@
 name: "Publish app to Google App Engine"
-description: "Publish app to Google App Engine"
-author: "Xiang Zheng"
+description: "This action allows you publish an application to Google App Engine"
+
 inputs:
   service_account_email:
     description: "The service account email which will be used for authentication."
