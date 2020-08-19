@@ -8,7 +8,8 @@ const deepmerge = require('deepmerge');
  *
  */
 try {
-    const fileContents = fs.readFileSync('./app.yaml', 'utf8');
+    const configPath = core.getInput('gae_config_path') || './app.yaml';
+    const fileContents = fs.readFileSync(configPath, 'utf8');
 
     let data = yaml.safeLoad(fileContents);
 

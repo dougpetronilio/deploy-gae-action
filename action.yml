@@ -1,27 +1,31 @@
-name: 'Publish app to Google App Engine using Inquid base template'
-description: 'Publish app to Google App Engine'
-author: 'Xiang Zheng'
+name: "Publish app to Google App Engine"
+description: "Publish app to Google App Engine"
+author: "Xiang Zheng"
 inputs:
   service_account_email:
-    description: 'The service account email which will be used for authentication.'
+    description: "The service account email which will be used for authentication."
     required: true
 
   service_account_key:
-    description: 'The service account key which will be used for authentication.'
+    description: "The service account key which will be used for authentication."
     required: true
 
   project_id:
-    description: 'GAE project id'
+    description: "GAE project id"
     required: true
 
+  gae_config_path:
+    description: "Location of Google App Engine config file"
+    required: false
+
   gae_variables:
-    description: 'GAE variables to be written to the app.yaml file'
+    description: "GAE variables to be written to the app.yaml file"
     required: false
 
 runs:
-  using: 'node12'
-  main: 'index.js'
+  using: "node12"
+  main: "index.js"
 
 branding:
-  icon: 'award'
-  color: 'blue'
+  icon: "award"
+  color: "blue"

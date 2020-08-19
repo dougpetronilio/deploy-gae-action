@@ -1,19 +1,11 @@
 # publish-gae-action
-[![Build Status](https://github.com/zxyle/publish-gae-action/workflows/Test%20Actions/badge.svg)](https://github.com/zxyle/publish-gae-action/actions?query=workflow%3A%22Test+Actions%22)
 
-
-This action allowed you publish application to [Google App Engine](https://cloud.google.com/appengine/).
-
-## Example
-
-This project uses this action to published to Google App Engine.
-
-[BoardCAM.org](https://github.com/BoardCAM/BoardCAM.org/blob/master/.github/workflows/pythonapp.yml)
+This action allows you publish application to [Google App Engine](https://cloud.google.com/appengine/).
 
 ## Usage
 ```yaml
 - name: Initialize Google Cloud SDK
-  uses: inquid/publish-gae-action@master
+  uses: rosslh/publish-gae-action@master
   with:
     service_account_email: ${{ secrets.GCP_SA_EMAIL }}
     service_account_key: ${{ secrets.GCP_SA_KEY }}
