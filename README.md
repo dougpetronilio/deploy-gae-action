@@ -2,12 +2,12 @@
 
 This action allows you to deploy an application to [Google App Engine](https://cloud.google.com/appengine/).
 
-This action was forked from https://github.com/inquid/publish-gae-action.
+This action was forked from https://github.com/rosslh/deploy-gae-action.
 
 ## Usage
 ```yaml
 - name: Initialize Google Cloud SDK
-  uses: rosslh/deploy-gae-action@master
+  uses: dougpetronilio/deploy-gae-action@master
   with:
     service_account_email: ${{ secrets.GCP_SA_EMAIL }}
     service_account_key: ${{ secrets.GCP_SA_KEY }}
